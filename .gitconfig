@@ -1,0 +1,9 @@
+[user]
+    email = myself@sakamotokenji.com
+	name = Sakamoto Kenji
+[credential]
+	helper = !aws codecommit credential-helper $@
+	UseHttpPath = true
+[core]
+	filemode = false
+	autocrlf = input

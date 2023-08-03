@@ -1,0 +1,208 @@
+{
+    "title": "MySettings",
+    "rules": [
+        {
+            "description": "コマンドキーを押したときに英数・かなキーを送信する",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "japanese_eisuu"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.parallels\\.desktop$",
+                                "^com\\.parallels\\.vm$",
+                                "^com\\.parallels\\.desktop\\.console$",
+                                "^com\\.parallels\\.winapp\\."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_command"
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "japanese_kana"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.parallels\\.desktop$",
+                                "^com\\.parallels\\.vm$",
+                                "^com\\.parallels\\.desktop\\.console$",
+                                "^com\\.parallels\\.winapp\\."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "f11",
+                            "modifiers": [
+                                "left_shift",
+                                "left_control"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.parallels\\.desktop$",
+                                "^com\\.parallels\\.vm$",
+                                "^com\\.parallels\\.desktop\\.console$",
+                                "^com\\.parallels\\.winapp\\."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_command"
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "f12",
+                            "modifiers": [
+                                "left_shift",
+                                "left_control"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.parallels\\.desktop$",
+                                "^com\\.parallels\\.vm$",
+                                "^com\\.parallels\\.desktop\\.console$",
+                                "^com\\.parallels\\.winapp\\."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Vim+Emacs Key Ctrl+m で改行する",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "m",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ]
+                        }
+                    },
+                    "to": {
+                        "key_code": "return_or_enter"
+                    }
+                }
+            ]
+        },
+        {
+            "description": "Vim+Emacs Key Ctrl+h でバックスペースする",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "h",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ]
+                        }
+                    },
+                    "to": {
+                        "key_code": "delete_or_backspace"
+                    }
+                }
+            ]
+        },
+        {
+            "description": "VimKey Ctrl+l でESC,英数切替する",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "l",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
+                        },
+                        {
+                            "key_code": "japanese_eisuu"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
