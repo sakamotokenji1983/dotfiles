@@ -2,6 +2,9 @@
 alias ls='ls -a'
 alias ll='ls -la'
 
+# pオプションで深い階層のディレクトリも一気に作成する
+alias mkdir='mkdir -p'
+
 # prompt
 export PS1="[\u@\H:\w \D{%Y-%m-%dT%H:%M:%S}]\n\$ "
 
