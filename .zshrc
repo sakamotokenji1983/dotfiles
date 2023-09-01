@@ -7,6 +7,11 @@ alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
 
+# docker
+alias d="docker"
+alias dc="docker compose"
+alias dcr="docker compose run --rm"
+
 # lsコマンドエイリアス
 alias ls="exa -a -g --icons --time-style=long-iso"
 alias ll="exa -la -g --icons --time-style=long-iso"
