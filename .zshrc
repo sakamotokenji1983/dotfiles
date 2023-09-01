@@ -10,6 +10,7 @@ alias view="nvim -R"
 # docker
 alias d="docker"
 alias dc="docker compose"
+alias dcb='docker compose build --no-cache && docker image prune -f'
 alias dcr="docker compose run --rm"
 
 # lsコマンドエイリアス
