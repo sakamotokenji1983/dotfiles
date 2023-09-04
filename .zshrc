@@ -52,6 +52,14 @@ if [ ! -e ~/.zsh/zsh-syntax-highlighting ]; then
 fi
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# zsh-completion を導入する
+if [ ! -e ~/.zsh/zsh-completions ]; then
+    git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
+fi
+fpath=(~/.zsh/completions $fpath)
+autoload -U compinit
+compinit -u
+
 # zsh-autosuggestions を導入する
 if [ ! -e ~/.zsh/zsh-autosuggestions ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
