@@ -11,6 +11,10 @@ alias dc='docker compose'
 alias dcb='docker compose build --no-cache && docker image prune -f'
 alias dcr='docker compose run --rm'
 
+# python
+alias python="python3"
+alias pip="pip3"
+
 # prompt
 export PS1="[\u@\H:\w \D{%Y-%m-%dT%H:%M:%S}]\n\$ "
 

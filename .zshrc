@@ -13,6 +13,10 @@ alias dc="docker compose"
 alias dcb='docker compose build --no-cache && docker image prune -f'
 alias dcr="docker compose run --rm"
 
+# python
+alias python="python3"
+alias pip="pip3"
+
 # lsコマンドエイリアス
 alias ls="exa -a -g --icons --time-style=long-iso"
 alias ll="exa -la -g --icons --time-style=long-iso"
