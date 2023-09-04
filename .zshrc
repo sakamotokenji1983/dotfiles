@@ -11,7 +11,6 @@ alias view="nvim -R"
 alias d="docker"
 alias dc="docker compose"
 alias dcb='docker compose build --no-cache && docker image prune -f'
-alias dcr="docker compose run --rm"
 
 # python
 alias python="python3"
