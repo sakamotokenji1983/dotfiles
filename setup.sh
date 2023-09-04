@@ -2,7 +2,9 @@
 
 SRC=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 
-mkdir ~/.config
+mkdir -p ~/.config/git
+mkdir -p ~/.config/nvim
+mkdir -p ~/.config/tmux
 
 files=(
     ".bashrc"
