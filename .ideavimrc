@@ -33,17 +33,15 @@ map <C-L> <Esc>
 
 " 定義箇所へ移動
 nnoremap gd :action GotoDeclaration<CR>
+
 " 実装箇所へ移動
 nnoremap gi :action GotoImplementation<CR>
+
 " スーパークラスへ移動
 nnoremap gs :action GotoSuperMethod<CR>
+
 " 戻る
 nnoremap gb :action Back<CR>
+
 " 進む
 nnoremap gf :action Forward<CR>
-
-" insertモードを抜けるとIMEオフ
-set noimdisable
-set iminsert=0 imsearch=0
-set noimcmdline
-inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
