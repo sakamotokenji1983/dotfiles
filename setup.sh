@@ -19,6 +19,7 @@ files=(
     ".emacs.d/init.el"
     ".gitconfig"
     ".gitignore"
+    ".ideavimrc"
     ".vimrc"
     ".zshrc"
 )
