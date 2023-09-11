@@ -45,3 +45,5 @@ nnoremap gb :action Back<CR>
 
 " 進む
 nnoremap gf :action Forward<CR>
+
+set showmode
