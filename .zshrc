@@ -17,8 +17,8 @@ alias python="python3"
 alias pip="pip3"
 
 # lsコマンドエイリアス
-alias ls="lsd -a"
-alias ll="lsd -la --date '+%Y-%m-%dT%H:%M:%S%Z'"
+alias ls="lsd -a --icon never"
+alias ll="lsd -la --date '+%Y-%m-%dT%H:%M:%S%Z' --icon never"
 
 # treeコマンドで日本語が表示できるようにする
 # -N ... Print non-printable characters as is.
