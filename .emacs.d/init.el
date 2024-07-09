@@ -363,31 +363,6 @@
   (lsp-mode . lsp-ui-mode)
 )
 
-;;; パッケージ：company
-;;; Emacs補完用マイナーモード
-;(use-package company
-;  :ensure t ;; インストールされていなければ自動インストールする
-;  :custom
-;  (company-transformers '(company-sort-by-backend-importance)) ; バックエンドの重要度でソートする
-;  (company-idle-delay 0) ; 補完候補が表示されるまでの時間
-;  (company-echo-delay 0) ; 補完候補をエコーエリア(ミニバッファの上部に表示されるエリア)に表示するまでの時間
-;  (company-minimum-prefix-length 2) ; 補完候補が表示されるために必要な入力文字数
-;  (company-selection-wrap-around t) ; 候補の一番下でさらに下に行こうとすると一番上に戻る。
-;  (completion-ignore-case t) ; 補完候補の選択時に大文字と小文字の区別をするかどうか
-;  (company-show-numbers t) ; 番号を表示する。
-;  :init
-;  (global-company-mode t) ; Emacsのどのメジャーモードでもcompany-modeを有効にするかどうか
-;  :bind (:map company-active-map
-;              ("C-n" . company-select-next)
-;              ("C-p" . company-select-previous)
-;              ("C-s" . company-filter-candidates)
-;              ("C-h" . backward-delete-char)
-;              ("<tab>" . company-complete-selection))
-;  :bind (:map company-search-map
-;              ("C-n" . company-select-next)
-;              ("C-h" . backward-delete-char)
-;              ("C-p" . company-select-previous)))
-
 ;;; Emacsの補完パッケージ
 ;;; companyやautocompleteよりもEmacsの組み込み機能と統合されているらしい
 (use-package corfu
