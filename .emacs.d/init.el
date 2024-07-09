@@ -345,8 +345,7 @@
   (lsp-ui-imenu-window-width 100) ; ウィンドウ幅を設定する
 
   ;; lsp-ui-peek
-  (lsp-ui-peek-enable t) ; ui
--peek を有効化する
+  (lsp-ui-peek-enable t) ; ui-peek を有効化する
   (lsp-ui-peek-always-show t) ; 候補が一つでも、常にpeek表示する。
   (lsp-ui-peek-peek-height 30)
   (lsp-ui-peek-list-width 100)
