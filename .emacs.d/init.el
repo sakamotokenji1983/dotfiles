@@ -20,7 +20,7 @@
 
 ;; iceberg
 (add-to-list 'custom-theme-load-path "~/.emacs.d/theme/iceberg/")
-;(load-theme 'iceberg t)
+(load-theme 'iceberg t)
 
 ;; dracula
 (use-package darcula-theme
