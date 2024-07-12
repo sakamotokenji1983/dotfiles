@@ -244,13 +244,6 @@
   (global-whitespace-mode 1)
   )
 
-;;; パッケージ：Golden-ratio ウィンドウサイズ自動調整
-;;; 黄金比(1:1.618)に基づいてカレントウィンドウを拡大し自動でウィンドウサイズを調節
-(use-package golden-ratio
-  :ensure t ; インストールされていなければ自動インストールする
-  :config
-  (golden-ratio-mode 1))
-
 ;;; パッケージ：ダッシュボード
 (use-package dashboard
   :ensure t ;; インストールされていなければ自動インストールする
