@@ -259,12 +259,6 @@
   (setq auto-save-buffers-enhanced-quiet-save-p t) ; Wroteのメッセージを抑制する
   (auto-save-buffers-enhanced t)) ; 自動保存 nil=無効 t=有効
 
-;;; パッケージ：eww (WEBブラウザ)
-(use-package eww
-  :ensure t ;; インストールされていなければ自動インストールする
-  :config
-  (setq eww-search-prefix "https://www.google.co.jp/search?q=")) ; 検索エンジンをgoogleに変更する
-
 ;;; パッケージ：org
 (use-package org
   :ensure t ;; インストールされていなければ自動インストールする
