@@ -390,11 +390,6 @@
   ;; PHPコードをどのようにフォーマットするかについての共通の規則を定めています。
   (php-mode-coding-style 'psr2))
 
-;;; パッケージ：geben
-;;; PHP xdebug for Emacs
-(use-package geben
-  :ensure t) ;; インストールされていなければ自動インストールする
-
 ;;; パッケージ：flycheck
 ;;; flycheckは、on-the-flyで(その場で)書式チェックを行うもの
 (use-package flycheck
