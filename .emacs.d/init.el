@@ -344,3 +344,23 @@
   ;; デフォルトでflycheckを有効にする
   (global-flycheck-mode))
 
+(use-package nerd-icons
+  :ensure t)
+(use-package vertico
+  :ensure t
+  :init
+  (vertico-mode))
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(nerd-icons visual-regexp-steroids vertico use-package treesit-auto php-mode orderless magit lsp-ui helm golden-ratio geben flycheck dashboard darcula-theme corfu company auto-save-buffers-enhanced)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
