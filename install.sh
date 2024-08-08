@@ -31,7 +31,6 @@ directories=(
     "${HOME}/.config/nvim/after/plugin"
     "${HOME}/.config/nvim/lua"
     "${HOME}/.config/alacritty"
-    "${HOME}/.config/karabiner"
 )
 
 # ディレクトリがなければ作成する
@@ -53,7 +52,6 @@ files=(
     ".config/nvim/lua/maps.lua"
     ".config/nvim/lua/plugins.lua"
     ".config/alacritty/alacritty.toml"
-    ".config/karabiner/karabiner.json"
     ".emacs.d/init.el"
     ".emacs.d/theme/iceberg/iceberg-theme.el"
     ".vimrc"
